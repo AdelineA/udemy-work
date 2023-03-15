@@ -6,6 +6,7 @@ import Body from './Components/Body';
 import Lessons from './Components/Lessons';
 import Recommended from './Components/Recommended';
 import Homepage from './Pages/Homepage';
+import Swipe from './Components/Swipe';
 
 
 
@@ -17,6 +18,7 @@ function App() {
   <Route path='body' element={<Body/>}/>
   <Route path='lesson' element={<Lessons/>}/>
   <Route path='recommend' element={<Recommended/>}/>
+  <Route path='swipe' element={<Swipe/>}/>
 </Routes>
   );
 }

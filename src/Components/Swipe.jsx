@@ -1,11 +1,33 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { NavLink } from "react-router-dom";
 
-export default function Recommended() {
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./Body.css";
+
+// import required modules
+import { Pagination, Navigation } from "swiper";
+
+export default function Swipe() {
   return (
-    <section>
-        <h2 class="font-bold text-xl ml-10 mt-4 ">Topics recommended for you</h2>
-        <div>
+    <>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide><div>
         <div class="flex justify-between px-11 py-1 mt-10"> 
         <div class="border border-gray-100 bg-white text-base text-center font-bold pl-3 pr-3 py-1">
             <NavLink to="#"> AWS certified cloud <br/>partitioner </NavLink>
@@ -42,9 +64,16 @@ export default function Recommended() {
         </div>
         
     </div>
-        </div>
-        
-
-    </section>
-  )
+        </div></SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
+    </>
+  );
 }

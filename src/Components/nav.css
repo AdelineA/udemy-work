@@ -1,0 +1,11 @@
+.div1{
+    margin-left: 6px;
+justify-content: space-between;
+}
+.nav1{
+    justify-content: space-between;
+    width: max-content;
+}
+/* .nav2{
+    margin-left: -10px;
+} */

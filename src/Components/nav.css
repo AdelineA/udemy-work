@@ -6,6 +6,12 @@ justify-content: space-between;
     justify-content: space-between;
     width: max-content;
 }
-/* .nav2{
-    margin-left: -10px;
-} */
+.nav4{
+    border: 1px solid whitesmoke;
+}
+.nav2{
+    display: flex;
+}
+.me-auto{
+    margin-top: 6px;
+}

@@ -15,10 +15,10 @@ import "./Body.css";
 
 export default function Lessons() {
   return (
-    <section>
+    <section class="bg-white px-2">
       <Swiper
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={15}
         loop={true}
         pagination={{
           clickable: true,
@@ -27,7 +27,7 @@ export default function Lessons() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide className="swip">
           <div className="lesson">
             <div class="flex-col border ml-2 mt-6">
               <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  ">
@@ -275,8 +275,8 @@ export default function Lessons() {
             </div>
           </div>
         </SwiperSlide>
-
-        <h3 class="text-2xl font-bold text-gray-900 mt-5 mb-5 ml-8">
+      </Swiper>
+      <h3 class="text-2xl font-bold text-gray-900 mt-20 mb-5 ml-8">
           Recommended for you
         </h3>
         <div className="lesson">
@@ -401,7 +401,6 @@ export default function Lessons() {
             </div>
           </div>
         </div>
-      </Swiper>
     </section>
   );
 }

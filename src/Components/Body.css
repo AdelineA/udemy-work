@@ -13,7 +13,7 @@
 .lesson{
     display: flex;
     justify-content: space-between;
-    margin-top: 12px;
+    margin-top: 24px;
     padding-left: 3px;
     padding-right: 3px;
 }
@@ -34,15 +34,10 @@
     margin: 0;
     padding: 0;
   }
-  
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
+/*  */
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    /* font-size: 18px; */
     background: #fff;
   
     /* Center slide text vertically */
@@ -53,13 +48,31 @@
   
   .swiper-slide img {
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* width: 100%;
+    height: 100%; */
+    /* object-fit: cover; */
   }
   
   .swiper {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  /* .mySwiper{
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+    margin-right: 1px;
+    margin-left: 1px;
+  } */
+
+  .logo{
+    width: 20px;
+    height: 20px;
+  }
+  .para{
+    margin-left: 80%;
+  }
+  .foot{
+    background-color: #1c1d1f;;
   }
   

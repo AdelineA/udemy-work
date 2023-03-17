@@ -1,6 +1,6 @@
 import React from "react";
 import Photo from "../imgs/Photo.jpg";
-import Alert from '../imgs/Alert.png'
+import Alert from "../imgs/Alert.png";
 import "./Body.css";
 
 export default function Body() {
@@ -14,38 +14,52 @@ export default function Body() {
           started with us.
         </p>
       </div>
-      <h1 class=" px-4 mt-12 ml-8 text-3xl font-extrabold mb-0 ">
-        Let's Starts learning,Adeline{" "}
-      </h1>
+      <div class="flex mt-12">
+        <h1 class=" px-4 ml-8 mr-64 text-3xl font-extrabold mb-0 ">
+          Let's Starts learning,Adeline{" "}
+        </h1>
+        <div class="justify-end ml-96">
+          <h6 class="text-violet-800 text-sm font-semibold">My learning</h6>
+          <div class="border bg-violet-800 h-1 border-violet-800 "></div>
+        </div>
+      </div>
+
       <div class="px-4 py-2 border border-gray-500 w-1/3 h-1/4 bg-white mt-6 text-center items-center card1">
         <div class="flex">
           <img src={Alert} class="w-15" alt="" />
           <div class="flex-col">
             <div class="flex ml-4 text-center items-center">
-            <h3 class="text-lg font-bold mt-0">Schedule time to learn</h3>
-            <svg xmlns="http://www.w3.org/2000/svg"
-             fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-12">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-             
+              <h3 class="text-lg font-bold mt-0">Schedule time to learn</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 ml-12"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+            <p class="text-base font-medium my-6 ">
+              {" "}
+              A little each day adds up. Get <br />
+              reminders from your calendar.
+            </p>
           </div>
-         <p class="text-base font-medium my-6 ">
-          {" "}
-          A little each day adds up. Get <br />
-          reminders from your calendar.
-        </p>
-          </div>
-         
         </div>
-        <p class="text-violet-700 text-base text-center items-center">Get started</p>
+        <p class="text-violet-700 text-base text-center items-center">
+          Get started
+        </p>
       </div>
       <div class="px-4 mt-6 ml-8">
         <h1 class=" text-3xl font-bold">What to learn next</h1>
-        <h2 class="text-2xl font-bold mt-3">
-          Recommended for you
-        </h2>
+        <h2 class="text-2xl font-bold mt-3">Recommended for you</h2>
       </div>
-      
     </div>
   );
 }

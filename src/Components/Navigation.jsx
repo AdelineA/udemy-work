@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -55,7 +54,8 @@ export default function Navigation() {
                 required
               />
 
-              <NavDropdown title="Udemy Business" id="collasible-nav-dropdown">
+              <NavDropdown title="Udemy Business" id="collasible-nav-dropdown"> 
+
                 <NavDropdown.Item className="drop" href="#action/3.1">
                   Action
                 </NavDropdown.Item>

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -5,9 +6,14 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import "./nav.css";
 
 export default function Navigation() {
+  const[isShown,setIsShown] = useState(false)
+  const[shown,setShown] = useState(false)
+  const[isShow,setIsShow] = useState(false)
+  const[areShown,setAreShown] = useState(false)
+
+
   return (
     <header class=" flex flex-col">
-      {/* Upper */}
 
       <Navbar
         classname="nav2"
@@ -35,17 +41,29 @@ export default function Navigation() {
               />
             </svg>
             <Nav className="me-auto">
-              <NavDropdown title="Categories" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
-                  Development
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Development
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Development
-                </NavDropdown.Item>
+              
+              <NavDropdown 
+              onMouseEnter={() => setIsShown(true)}
+              onMouseLeave={() => setIsShown(false)} 
+              title="Categories" id="collasible-nav-dropdown" > 
+               
               </NavDropdown>
+              
+              {isShown && (
+               
+               <div class="flex w-full h-fit bg-black text-white text-base mt-12 px-4 py-5 ">
+                 <ul class="flex gap-1 ">
+
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                 </ul>
+               </div>
+              )}  
+              
+              
               <input
                 type="search"
                 id="default-search"
@@ -54,45 +72,65 @@ export default function Navigation() {
                 required
               />
 
-              <NavDropdown title="Udemy Business" id="collasible-nav-dropdown"> 
+              <NavDropdown 
+              onMouseEnter={() => setShown(true)}
+              onMouseLeave={() => setShown(false)} 
+              title="Udemy Business" id="collasible-nav-dropdown"> 
+  
+              </NavDropdown>
+              
+              {shown && (
+               
+               <div class="flex gap-1 w-full h-fit bg-black text-white text-base mt-12 px-4 py-5 ">
+                 <ul class="flex">
 
-                <NavDropdown.Item className="drop" href="#action/3.1">
-                  Action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                {/*  */}
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                 </ul>
+               </div>
+              )}
+              
+              <NavDropdown 
+              onMouseEnter={() => setIsShow(true)}
+              onMouseLeave={() => setIsShow(false)} 
+              title="Tech on Udemy" id="collasible-nav-dropdown">
+               
               </NavDropdown>
-              <NavDropdown title="Tech on Udemy" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
+              {isShow && (
+               
+               <div class="flex gap-1 w-full h-fit bg-black text-white text-base mt-12 px-4 py-1 ">
+                 <ul class="flex">
+
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                 </ul>
+               </div>
+              )}
+              <NavDropdown 
+              onMouseEnter={() => setAreShown(true)}
+              onMouseLeave={() => setAreShown(false)} 
+              title="My learning" id="collasible-nav-dropdown">
+                
               </NavDropdown>
-              <NavDropdown title="My learning" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
+              {areShown && (
+               
+               <div class="flex gap-1 w-full h-fit bg-black text-white text-base mt-12 px-4 py-1 ">
+                 <ul class="flex">
+
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                  <li>Udemy Tech</li>
+                 </ul>
+               </div>
+              )}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

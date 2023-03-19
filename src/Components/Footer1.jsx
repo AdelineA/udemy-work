@@ -9,12 +9,12 @@ export default function Footer1() {
         <div class="flex px-11 py-2 mt-14">
           <div class="flex-col mr-32 mt-10">
             <h2 class="font-semibold text-xl ">Teach the world online</h2>
-            <p class="font-normal text-sm mt-2">
+            <p class="font-normal text-base mt-3">
               Create an online video course,reach the student across the globe,
               and earn money
             </p>
           </div>
-          <button class="px-2 py-2  mt-10 border-2 text-white ml-96 hover:bg-gray-700 text-base w-fit h-12 foot">
+          <button class="px-2 py-2  mt-10 border-2 text-white ml-80 hover:bg-gray-700 text-base w-fit h-12 foot">
             Teach on Udemy
           </button>
         </div>
@@ -30,7 +30,7 @@ export default function Footer1() {
           </h1>
 
           <svg
-            class="ml-8"
+            class="ml-72"
             width="44"
             height="44"
             viewBox="0 0 44 44"
@@ -45,7 +45,7 @@ export default function Footer1() {
             />
           </svg>
           <svg
-            class="ml-2"
+            class="ml-10"
             width="115"
             height="44"
             viewBox="0 0 115 44"
@@ -62,7 +62,7 @@ export default function Footer1() {
             />
           </svg>
           <svg
-            class="ml-2"
+            class="ml-10"
             width="115"
             height="44"
             viewBox="0 0 115 44"
@@ -128,7 +128,7 @@ export default function Footer1() {
           </svg>
         </div>
       </div>
-      <div class="flex px-11 mr-32 mt-10 ">
+      <div class="flex px-11 mt-10 ">
         <div class="flex flex-col text-base font-normal">
           <NavLink to="#">Udemy Business</NavLink>
           <NavLink to="#">Tech on udemy</NavLink>
@@ -136,21 +136,21 @@ export default function Footer1() {
           <NavLink to="#">About Us</NavLink>
           <NavLink to="#">Contact Us</NavLink>
         </div>
-        <div class="flex flex-col ml-20 text-base font-normal">
+        <div class="flex flex-col ml-32 text-base font-normal">
           <NavLink to="#">Careers</NavLink>
           <NavLink to="#">Blog</NavLink>
           <NavLink to="#">Help and Support</NavLink>
           <NavLink to="#">Affiliate</NavLink>
           <NavLink to="#">Investors</NavLink>
         </div>
-        <div class="flex flex-col ml-20 text-base font-normal">
+        <div class="flex flex-col ml-32 text-base font-normal">
           <NavLink to="#">Terms</NavLink>
           <NavLink to="#">Privacy Policy</NavLink>
           <NavLink to="#">Cookies settings</NavLink>
           <NavLink to="#">Site maps</NavLink>
           <NavLink to="#">Accessibility ststement</NavLink>
         </div>
-        <div class="px-2 py-2 mt-10 border-2 text-white ml-96 hover:bg-gray-700 text-base w-fit h-12 foot">
+        <div class="px-4 py-2 mt-10 border-2 text-white ml-96 hover:bg-gray-700 text-base w-fit h-12 foot">
           <button className="flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"

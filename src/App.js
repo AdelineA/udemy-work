@@ -9,7 +9,6 @@ import Homepage from './Pages/Homepage';
 import Hover from './Components/Hover';
 import Footer1 from './Components/Footer1';
 import Mouse from './Components/Hovering-Function/Mouse';
-import Navi from './Components/Navi';
 
 
 
@@ -25,7 +24,6 @@ function App() {
   <Route path='hover' element={<Hover/>}/>
   <Route path='footer' element={<Footer1/>}/>
   <Route path='mouse' element={<Mouse/>}/>
-  <Route path='navi' element={<Navi/>}/>
 </Routes>
   );
 }

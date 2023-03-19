@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import python from "../imgs/python.jpg";
@@ -14,6 +14,10 @@ import "swiper/css/navigation";
 import "./Body.css";
 
 export default function Lessons() {
+  const[isShown,setIsShown]= useState(false)
+
+
+
   return (
     <section class="bg-white px-2">
       <Swiper
@@ -32,8 +36,23 @@ export default function Lessons() {
             <div class="flex-col border ml-2 mt-6">
               <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  ">
                 <NavLink to="#">
-                  <img class="rounded-t-lg" src={python} alt="" />
+                  <img class="rounded-t-lg" src={python} alt="" 
+                   onMouseEnter={() => setIsShown(true)}
+                   onMouseLeave={() => setIsShown(false)} 
+                  />
                 </NavLink>
+                {isShown && (
+                  <div class="flex w-full h-fit text-base mt-12 px-4 py-5 left-10 ">
+                  <ul class="flex gap-1 ">
+ 
+                   <li>Udemy Tech</li>
+                   <li>Udemy Tech</li>
+                   <li>Udemy Tech</li>
+                   <li>Udemy Tech</li>
+                   <li>Udemy Tech</li>
+                  </ul>
+                </div>
+                )}
               </div>
               <div>
                 <h2 class="text-lg text-gray-900 font-semibold">
